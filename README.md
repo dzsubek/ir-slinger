@@ -1,7 +1,7 @@
 IR Slinger
 ==========
 
-[![Build Status](https://travis-ci.org/bschwind/ir-slinger.svg?branch=travis)](https://travis-ci.org/bschwind/ir-slinger)
+[![Build Status](https://api.travis-ci.org/dzsubek/ir-slinger.svg?branch=master)](https://travis-ci.org/dzsubek/ir-slinger)
 
 Small C library for sending infrared packets on the Raspberry Pi
 This is a header-only library. Use it by including "irslinger.h" and
@@ -19,11 +19,7 @@ Dependencies
 Build
 -----
 
-    gcc test.c -lm -lpigpio -pthread -lrt
-
-Or
-
-    clang test.c -lm -lpigpio -pthread -lrt
+    gcc transmit.c -lm -lpigpio -pthread -lrt -o transmit
 
 The `-lrt` technically isn't necessary for most versions of gcc and clang,
 but I needed it to get Travis CI's compilers working.
