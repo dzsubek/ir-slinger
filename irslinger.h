@@ -110,8 +110,6 @@ static inline int irSling(uint32_t outPin,
 	{
 		carrierFrequency(outPin, frequency, dutyCycle, onePulse, irSignal, &pulseCount);
 	}
-
-	printf("pulse count is %i\n", pulseCount);
 	// End Generate Code
 
 	// Init pigpio
@@ -134,8 +132,6 @@ static inline int irSling(uint32_t outPin,
 	if (waveID >= 0)
 	{
 		int result = gpioWaveTxSend(waveID, PI_WAVE_MODE_ONE_SHOT);
-
-		printf("Result: %i\n", result);
 	}
 	else
 	{
@@ -185,7 +181,6 @@ static inline int irSlingRaw(uint32_t outPin,
 		}
 	}
 
-	printf("pulse count is %i\n", pulseCount);
 	// End Generate Code
 
 	// Init pigpio
@@ -208,8 +203,6 @@ static inline int irSlingRaw(uint32_t outPin,
 	if (waveID >= 0)
 	{
 		int result = gpioWaveTxSend(waveID, PI_WAVE_MODE_ONE_SHOT);
-
-		printf("Result: %i\n", result);
 	}
 	else
 	{
