@@ -72,8 +72,6 @@ static inline int irSling(uint32_t outPin,
 
 	size_t codeLen = strlen(code);
 
-	printf("code size is %zu\n", codeLen);
-
 	if (codeLen > MAX_COMMAND_SIZE)
 	{
 		// Command is too big
