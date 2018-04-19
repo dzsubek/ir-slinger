@@ -11,5 +11,4 @@ before_install:
   - cd ..
 
 script:
-  - $CC test.c -lm -lpigpio -pthread -lrt
-  - $CC testRawCodes.c -lm -lpigpio -pthread -lrt
+  - $CC transmit.c -lm -lpigpio -pthread -lrt
